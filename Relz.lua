@@ -1,6 +1,7 @@
 local Update = loadstring(Game:HttpGet"https://roblox.relzscript.xyz/source/relzhub/library/pc.lua")()
 local Alert = loadstring(Game:HttpGet"https://raw.githubusercontent.com/Basicallyybeta/uii/main/Mingameui.lua")()
 local Library = Update:Window("Script By Vũ")
+local Info = Library:Tab("Information","rbxassetid://17405140638")
 local Main = Library:Tab("Main","rbxassetid://10723407389")
 local Set = Library:Tab("Setting","rbxassetid://10734950309")
 local Hold = Library:Tab("Hold Skill","rbxassetid://10734984606")
@@ -3355,7 +3356,7 @@ Main:Seperator("Cake Farm")
     
     Set:Seperator("Settings")
 
-    Set:Toggle("Spin Position", true, "Spin Position When Farm", function(v)
+    Set:Toggle("Spin Position", false, "Spin Position When Farm", function(v)
         _G.SpinPos = v
     end)
     
@@ -3492,7 +3493,7 @@ function AttackNoCD()
 end
 
 local AttackList = {0, 0.100, 0.150, 0.165, 0.175, 0.200, 0.250}
-_G.FastAttackDelay = 0.200
+_G.FastAttackDelay = 0.150
 Set:Dropdown("Fast Attack Delay", AttackList,_G.FastAttackDelay,function(v)
     _G.FastAttackDelay = v
 end)
