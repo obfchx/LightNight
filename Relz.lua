@@ -1,6 +1,6 @@
 local Update = loadstring(Game:HttpGet"https://roblox.relzscript.xyz/source/relzhub/library/pc.lua")()
 local Alert = loadstring(Game:HttpGet"https://raw.githubusercontent.com/Basicallyybeta/uii/main/Mingameui.lua")()
-local Library = Update:Window("Blox Fruits")
+local Library = Update:Window("Script By Vũ")
 local Main = Library:Tab("Main","rbxassetid://10723407389")
 local Set = Library:Tab("Setting","rbxassetid://10734950309")
 local Hold = Library:Tab("Hold Skill","rbxassetid://10734984606")
@@ -15,7 +15,7 @@ local T = Library:Tab("Teleport","rbxassetid://10723434557")
 local S = Library:Tab("Shop","rbxassetid://10734952479")
 local D = Library:Tab("Devil Fruit","rbxassetid://10709761889")
 local Misc = Library:Tab("Misc","rbxassetid://10723424838")
-local Sevr = Library:Tab("Sever","rbxassetid://10723426722")
+local Serv = Library:Tab("Sever","rbxassetid://10723426722")
 
 
 if game.PlaceId == 2753915549 then
@@ -2169,9 +2169,9 @@ UpdateClient1()
 end
 end)
 
-Main:Label("Script By RelzBlox#6078")
+Main:Label("Script By Trương Vũ")
 Main:Button("Copy Discord Link",function()
-setclipboard("https://discord.com/invite/ba2jasaKn2") 
+setclipboard("Chưa Có Đâu Kiếm") 
 end)
 
 Main:Seperator("Level Farm")
@@ -3365,7 +3365,7 @@ Main:Seperator("Cake Farm")
     end)
 
     TweenSpeed = 350
-    Set:Slider("Player Tween Speed",0,350,TweenSpeed,function(value)
+    Set:Slider("Player Tween Speed",0,550,TweenSpeed,function(value)
         TweenSpeed = value
     end)
     
