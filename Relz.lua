@@ -1,5 +1,5 @@
-local Update = loadstring(Game:HttpGet"https://roblox.relzscript.xyz/source/relzhub/library/pc.lua")()
-local Alert = loadstring(Game:HttpGet"https://raw.githubusercontent.com/Basicallyybeta/uii/main/Mingameui.lua")()
+local Update = loadstring(Game:HttpGet"https://raw.githubusercontent.com/obfchx/ui/main/Theme.lua")()
+local Alert = loadstring(Game:HttpGet"https://raw.githubusercontent.com/obfchx/ui/main/Notify.txt")()
 local Library = Update:Window("Script By Vũ")
 local Info = Library:Tab("Information","rbxassetid://17405140638")
 local Main = Library:Tab("Main","rbxassetid://10723407389")
@@ -2124,9 +2124,9 @@ end
     end)
 
     
-Main:Seperator("Main")
+Info:Seperator("Information")
 
-Time = Main:Label("Executor Time")
+Time = Info:Label("Executor Time")
 
 function UpdateTime()
 local GameTime = math.floor(workspace.DistributedGameTime+0.5)
@@ -2144,7 +2144,7 @@ end)
 end
 end)
 
-Client = Main:Label("Client")
+Client = Info:Label("Client")
 
 function UpdateClient()
 local Fps = workspace:GetRealPhysicsFPS()
@@ -2157,7 +2157,7 @@ UpdateClient()
 end
 end)
 
-Client1 = Main:Label("Client")
+Client1 = Info:Label("Client")
 
 function UpdateClient1()
 local Ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
@@ -2170,8 +2170,8 @@ UpdateClient1()
 end
 end)
 
-Main:Label("Script By Trương Vũ")
-Main:Button("Copy Discord Link",function()
+Info:Label("Script By Trương Vũ")
+Info:Button("Copy Discord Link",function()
 setclipboard("Chưa Có Đâu Kiếm") 
 end)
 
