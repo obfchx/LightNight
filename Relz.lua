@@ -1876,7 +1876,7 @@ end
 
     function fastpos(Pos)
         Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-        Speed = 1000
+        Speed = 1500
         game:GetService("TweenService"):Create(
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
             TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear),
@@ -1886,7 +1886,7 @@ end
 
     function slowpos(Pos)
         Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-        Speed = 150
+        Speed = 350
         game:GetService("TweenService"):Create(
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
             TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear),
